@@ -34,7 +34,7 @@ int main(){
         case 2:
             cout << "Starting benchmark for HeapPriorityQueue<int>..." << endl;
             try {
-                run_test_suite<HeapPriorityQueue<int>>(4, 50, 100, 100, 100, 10);
+                run_test_suite<HeapPriorityQueue<int>>(4, 100, 100, 100, 100, 100);
                 cout << "Benchmark completed successfully." << endl;
             } catch (const exception& e) {
                 cerr << "Benchmark failed: " << e.what() << endl;

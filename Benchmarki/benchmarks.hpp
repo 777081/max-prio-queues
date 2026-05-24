@@ -128,7 +128,7 @@ template <typename T> vector<T> create_reiteration_copies(T structure, int reite
 template <typename T> testItem<T> populate_structure(int seed, int size){
     // Tworzenie struktury z losowymi danymi
     mt19937 rng_val(seed*2+15);
-    mt19937 rng_prio((((seed*3+17)%3)+8)*7);
+    mt19937 rng_prio((((seed*3)%4)+9)*7);
     uniform_int_distribution<int> dist_val(-VAL_RANGE, VAL_RANGE);
     uniform_int_distribution<unsigned int> dist_prio(0, MAX_PRIO);
     T structure;
